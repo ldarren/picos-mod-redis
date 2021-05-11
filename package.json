@@ -1,6 +1,6 @@
 {
   "name": "picos-mod-redis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "redis module for picos",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,8 @@
   },
   "homepage": "https://github.com/ldarren/picos-mod-redis#readme",
   "dependencies": {
-    "hiredis": "^0.5.0",
-    "pico-args": "^1.0.8",
-    "picos-session": "^0.1.0",
-    "redis": "^2.7.0"
+    "pico-args": "^1.0.13",
+    "picos-session": "^0.1.4",
+    "redis": "^3.1.2"
   }
 }

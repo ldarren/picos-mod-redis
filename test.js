@@ -1,14 +1,14 @@
 const
-pico=require('pico-common/pico-cli'),
-ensure= pico.export('pico/test').ensure,
+pico=require('pico-common/bin/pico-cli'),
+test= pico.export('pico/test').test,
 redis=require('./index')
 
 let client
 
-ensure('ensure redis loaded', function(cb){
+test('ensure redis loaded', function(cb){
 	cb(null, !!redis)
 })
-ensure('ensure redis create', function(cb){
+test('ensure redis create', function(cb){
 	redis.create({path:'',env:'pro'},{},(err, cli)=>{
 		if (err) return cb(err)
 		client=cli
